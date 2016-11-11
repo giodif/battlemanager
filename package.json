@@ -1,8 +1,8 @@
 {
   "name": "battlemanager",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "BattleManager object for TIY student project, not real world ready",
-  "main": "index.html",
+  "main": "js/battlemanager.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

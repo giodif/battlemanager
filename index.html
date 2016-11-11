@@ -19,18 +19,20 @@
             /************  USAGE EXAMPLES  ****************************/
             /**********************************************************/
 
-                //adds custom messages to the battlemanager
-                //must do before calling narrativeBattle or statBattle
+                // adds custom messages to the battlemanager
+                // must do before calling narrativeBattle or statBattle
                 // BattleManager.addMessages( [] );
 
                 //runs a single narrative battle
                 //returns an array of event objects that document the battle
                 console.log( "narrativeBattle() ", BattleManager.narrativeBattle( { id: 1011176 }, { id: 1009153 } ) );
 
-                //runs a series of narrative battles
-                //third argument: the number of narrative battles to run
-                //returns an object that includes the win/loss ratio of battles and 
-                //the full history of all stat battles
+                // note that you can pass an object w/ Marvel character id, a string or a number.
+
+                // runs a series of narrative battles
+                // third argument: the number of narrative battles to run
+                // returns an object that includes the win/loss ratio of battles and 
+                // the full history of all stat battles
                 console.log( "statBattle() ", BattleManager.statBattle( 1011176, '1009153', 30 ) );
 
             /**********************************************************/

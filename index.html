@@ -13,27 +13,25 @@
     </head>
     <body>
 
-        <script src="data/characters.js"></script>  <!-- loads the character data as a variable called character -->
-        <script src="data/messages.js"></script>    <!-- loads the message data as a variable called messages -->
         <script src="js/battlemanager.js"></script> <!-- loads the BattleManager object -->
         
         <script>
             /************  USAGE EXAMPLES  ****************************/
             /**********************************************************/
 
-                //adds messages to the battlemanager
+                //adds custom messages to the battlemanager
                 //must do before calling narrativeBattle or statBattle
-                BattleManager.addMessages( messages );
+                // BattleManager.addMessages( [] );
 
                 //runs a single narrative battle
                 //returns an array of event objects that document the battle
-                console.log( "narrativeBattle() ", BattleManager.narrativeBattle( characters[ 12 ], characters[ 101 ] ) );
+                console.log( "narrativeBattle() ", BattleManager.narrativeBattle( { id: 1011176 }, { id: 1009153 } ) );
 
                 //runs a series of narrative battles
                 //third argument: the number of narrative battles to run
                 //returns an object that includes the win/loss ratio of battles and 
                 //the full history of all stat battles
-                console.log( "statBattle() ", BattleManager.statBattle( characters[ 12 ], characters[ 101 ], 30 ) );
+                console.log( "statBattle() ", BattleManager.statBattle( 1011176, '1009153', 30 ) );
 
             /**********************************************************/
 
